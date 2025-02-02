@@ -1,0 +1,115 @@
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.wrapper{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #4a98f7;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+    font-size: 3rem;
+
+    /* transition: 0.5s ease; */
+}
+
+.container {
+    min-width: 250px;
+    padding: 30px 40px;
+    border-radius: 12px;
+    background: #ffffffd3;
+    text-align: center;
+    box-shadow: 10px 10px 2px rgba(8, 8, 8, 0.1);
+    border: 1px solid #333;
+    margin: 20px;
+}
+
+.container h2 {
+    /* font-size: 18px; */
+    /* font-weight: 400; */
+    color: #333;
+}
+
+.container p {
+    color: #333;
+}
+
+.guessing-tip{
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.wrapper .input-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 10px;
+    margin: 25px 0;
+}
+
+.input-section input, .input-section button {
+  height: 50px;
+  /* width: calc(100% / 2 - 10px);  20px is for gap alloted to them */
+  outline: none;
+  padding: 0 20px;
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+.input-section input {
+  text-align: center;
+  color: #707070;
+  width: 220px;
+  border: 1px solid #aaa;
+}
+
+
+/* How to remove the up and down arrows that appear on the input tag */
+
+.input-section input:disabled {
+    /* when disabled is set to true for the input*/
+    cursor: not-allowed;
+  }
+
+.input-section button {
+    border: none;
+    background: #4a98f7;
+    width: 110px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.input-section button:active {
+    /* To reduce the size of the button when clicked */
+    transform: scale(0.97);
+}
+
+.chances-Remain{
+    font-weight: 900;
+}
+
+
+@media screen and (max-width: 480px) {
+    h1{
+        margin-top: 1rem;
+        line-height: 105%;
+        font-size: 3rem;
+    }
+    .container{
+        padding: 15px 20px;
+    }
+}
